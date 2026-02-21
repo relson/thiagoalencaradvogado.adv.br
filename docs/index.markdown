@@ -1,11 +1,10 @@
 ---
-layout: home
-title: "Início"
+layout: page
+title: ""
+permalink: /
 ---
 
 <section class="home-hero">
-<div class="home-hero-content">
-
 <img src="/assets/images/Logo-Thiago-ADV.webp" alt="Logo Thiago Alencar Advogado" class="home-logo">
 
 # Soluções jurídicas estratégicas para proteger seus interesses com estratégia e segurança!
@@ -16,5 +15,4 @@ Escritório de advocacia especializado em Direito Previdenciário, Trabalhista e
 
 <a href="/thiagoalencaradvogado/" class="btn btn-outline">CONHEÇA O ESCRITÓRIO</a>
 
-</div>
 </section>

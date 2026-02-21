@@ -179,6 +179,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
 .post-content .google-reviews-section,
 .post-content .google-reviews-badge,
 .post-content .google-map,
+.post-content .google-section-grid,
 .post-content .timeline,
 .post-content .home-hero {
   max-width: none;
@@ -403,12 +404,15 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   font-size: 2em;
   margin: 15px 0;
 }
+.google-section-grid {
+  max-width: 700px;
+  margin: 30px auto;
+}
 .google-reviews-section {
-  text-align: center;
-  margin: 30px 0;
+  margin: 0 0 25px;
 }
 .google-reviews-badge {
-  display: inline-flex !important;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -416,6 +420,8 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 30px 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .google-rating p {
   margin: 5px 0;
@@ -423,13 +429,13 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   color: var(--color-secondary);
 }
 .google-map {
-  margin: 30px 0;
+  margin: 0;
 }
 .google-map iframe {
   width: 100%;
   height: 300px;
   border: 0;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 /* ===== BLOG CARDS ===== */
@@ -477,44 +483,82 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
 
 /* ===== CONTATO ===== */
 .contato-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items: flex-start;
+  align-items: start;
   margin: 20px 0;
-}
-.contato-image {
-  flex: 0 0 45%;
 }
 .contato-image img {
   width: 100%;
   border-radius: 12px;
 }
-.contato-form-wrapper { flex: 1; }
+.contato-form-wrapper {
+  background: var(--color-light-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 35px;
+}
+.contato-form-wrapper .section-title {
+  font-size: 1.3em;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.contato-form-wrapper .section-subtitle {
+  font-size: 0.95em;
+  margin-bottom: 25px;
+}
 .contato-form .form-group {
   margin-bottom: 18px;
 }
 .contato-form label {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-secondary);
-  margin-bottom: 5px;
-  font-size: 0.92em;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  letter-spacing: 0.3px;
 }
 .contato-form input,
 .contato-form textarea {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border: 1px solid var(--color-border);
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: 'Roboto', sans-serif;
   font-size: 0.95em;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
+  background: var(--color-white);
 }
 .contato-form input:focus,
 .contato-form textarea:focus {
   outline: none;
   border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(203, 164, 135, 0.15);
+}
+.contato-form input::placeholder,
+.contato-form textarea::placeholder {
+  color: #aaa;
+}
+.contato-form .btn {
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.95em;
+  margin-top: 5px;
+}
+.contato-info {
+  text-align: center;
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--color-light-bg);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+.contato-info p {
+  margin: 5px 0 15px;
+  color: var(--color-text);
 }
 
 /* ===== ABOUT ===== */
@@ -537,7 +581,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .historia-image { flex: 0 0 220px; }
   .escritorio-image { flex: 0 0 220px; }
   .blog-card img { width: 220px; }
-  .contato-image { flex: 0 0 40%; }
+  .contato-section { gap: 25px; }
 }
 
 /* ===== MOBILE ===== */
@@ -556,8 +600,8 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .timeline-item { padding-left: 15px; }
   .blog-card { flex-direction: column; }
   .blog-card img { width: 100%; min-height: 180px; }
-  .contato-section { flex-direction: column; }
-  .contato-image { flex: none; width: 100%; }
+  .contato-section { grid-template-columns: 1fr; }
+  .contato-image { display: none; }
   .about-section { flex-direction: column; text-align: center; }
   .about-image { flex: none; width: 100%; max-width: 250px; margin: 0 auto; }
   .site-nav .menu-icon > svg { fill: var(--color-white); }
@@ -568,9 +612,10 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .home-hero h1 { font-size: 1.5em; }
   .btn, a.btn { padding: 12px 24px; font-size: 0.85em; display: block; text-align: center; }
   .center-btn { width: auto; }
-  .google-reviews-badge { padding: 20px; width: 100%; box-sizing: border-box; }
+  .google-reviews-badge { padding: 20px; }
   .google-map iframe { height: 220px; }
   .section-title { font-size: 1.3em; }
+  .contato-form-wrapper { padding: 25px 20px; }
 }
 
 /* ===== SMALL MOBILE ===== */

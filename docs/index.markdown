@@ -164,6 +164,7 @@ permalink: /
 <h2 class="section-title">O que dizem sobre mim</h2>
 <p class="section-subtitle">Somos avaliados com 5 estrelas no Google</p>
 
+<div class="google-section-grid">
 <div class="google-reviews-section">
 <div class="google-reviews-badge">
 <img src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google" width="80" loading="lazy">
@@ -174,12 +175,12 @@ permalink: /
 <a href="https://www.google.com/maps/place//data=!4m7!3m6!1s0x92d90d038c8ce59b:0x460cc87454126a72!8m2!3d-7.1909252!4d-48.2077868!9m1!1b1" class="btn" target="_blank" rel="noopener">VER AVALIAÇÕES NO GOOGLE</a>
 </div>
 </div>
+<div class="google-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5!2d-48.2077868!3d-7.1909252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d038c8ce59b%3A0x460cc87454126a72!2sAlencar%20Advogados!5e0!3m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Alencar Advogados"></iframe>
+</div>
+</div>
 
 <p style="text-align: center; color: var(--color-text);">Reflexo do compromisso com um atendimento ético e responsável.</p>
-
-<div class="google-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5!2d-48.2077868!3d-7.1909252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d038c8ce59b%3A0x460cc87454126a72!2sAlencar%20Advogados!5e0!3m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Alencar Advogados"></iframe>
-</div>
 
 <hr>
 

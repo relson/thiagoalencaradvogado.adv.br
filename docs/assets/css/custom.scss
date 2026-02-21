@@ -296,8 +296,8 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .area-card img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   margin-bottom: 20px;
 }
@@ -624,7 +624,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .home-hero h1 { font-size: 1.3em; }
   .home-logo { max-width: 160px; }
   .area-card { padding: 18px; }
-  .area-card img { width: 90px; height: 90px; }
+  .area-card img { width: 160px; height: 160px; }
   .feature-card { padding: 15px 18px; }
   .blog-card-content { padding: 15px; }
   .contato-form input, .contato-form textarea { padding: 8px 12px; }

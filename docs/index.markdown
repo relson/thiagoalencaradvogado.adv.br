@@ -4,6 +4,10 @@ title: ""
 permalink: /
 ---
 
+<div class="home-hero">
+<img src="/assets/images/Logo-Thiago-ADV.webp" alt="Alencar Advogados" class="home-logo">
+</div>
+
 <section class="hero-section">
 <div class="hero-content">
 <h1>Soluções jurídicas estratégicas para proteger seus interesses com estratégia e segurança!</h1>

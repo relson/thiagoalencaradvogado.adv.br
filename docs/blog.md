@@ -5,11 +5,12 @@ date: 2026-02-07 11:28:28
 permalink: /blog/
 ---
 
-<section class="blog-header">
+<div class="blog-header">
 <img src="/assets/images/Revisao-INSS-1-2-1-1.webp" alt="Blog Alencar Advogados" class="blog-banner">
+</div>
+
 <h2 class="section-title">Blog Alencar Advogados</h2>
 <p class="section-subtitle">Conteúdo jurídico atualizado com análises estratégicas, orientações práticas e informações relevantes para empresas e cidadãos.</p>
-</section>
 
 <div class="blog-grid">
 

@@ -200,11 +200,8 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
 /* ===== HOME HERO ===== */
 .home-hero {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark-bg) 100%);
-  border-radius: 12px;
-  margin: -20px -30px 30px;
-  color: var(--color-white);
+  padding: 40px 20px 20px;
+  margin-bottom: 10px;
 }
 .home-hero h1 {
   color: var(--color-white);
@@ -220,7 +217,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
 }
 .home-logo {
   max-width: 220px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -432,7 +429,10 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   max-height: 300px;
   object-fit: cover;
 }
-.blog-header { text-align: center; margin-bottom: 30px; }
+.blog-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
 .blog-grid { display: flex; flex-direction: column; gap: 20px; }
 .blog-card {
   background: var(--color-light-bg);
@@ -553,7 +553,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .site-nav .trigger { background-color: var(--color-secondary); padding: 10px; }
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
-  .home-hero { margin: -20px -15px 30px; padding: 40px 15px; }
+  .home-hero { padding: 20px 15px 10px; }
   .home-hero h1 { font-size: 1.5em; }
   .btn, a.btn { padding: 12px 24px; font-size: 0.85em; display: block; text-align: center; }
   .center-btn { width: auto; }

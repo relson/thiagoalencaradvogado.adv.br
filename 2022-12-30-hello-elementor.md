@@ -1,0 +1,9 @@
+---
+layout: page
+title: "hello-elementor"
+date: 2022-12-30 18:01:33
+status: publish
+type: custom_css
+---
+
+/* Remover espaço em brando lateral no mobile\n\n */\nhtml, body{\n    overflow-x: hidden !important; \n}\n\n\n\n/** Start Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/\n\n.envato-block__preview{overflow: visible;}\n\n/* Envato Kit 141 Custom Styles - Applied to the element under Advanced */\n\n.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper{\n	text-align: center;\n}\n.envato-kit-141-top-0 h1,\n.envato-kit-141-top-0 h2,\n.envato-kit-141-top-0 h3,\n.envato-kit-141-top-0 h4,\n.envato-kit-141-top-0 h5,\n.envato-kit-141-top-0 h6,\n.envato-kit-141-top-0 p {\n	margin-top: 0;\n}\n\n.envato-kit-141-newsletter-inline .elementor-field-textual.elementor-size-md {\n	padding-left: 1.5rem;\n	padding-right: 1.5rem;\n}\n\n.envato-kit-141-bottom-0 p {\n	margin-bottom: 0;\n}\n\n.envato-kit-141-bottom-8 .elementor-price-list .elementor-price-list-item .elementor-price-list-header {\n	margin-bottom: .5rem;\n}\n\n.envato-kit-141.elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .swiper-container {\n	padding-bottom: 52px;\n}\n\n.envato-kit-141-display-inline {\n	display: inline-block;\n}\n\n.envato-kit-141 .elementor-slick-slider ul.slick-dots {\n	bottom: -40px;\n}\n\n/** End Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/\n\n\n\n/** Start Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/\n\n.envato-block__preview{overflow: visible !important;}\n\n/** End Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/\n\n\n\n/** Start Block Kit CSS: 71-3-d415519effd9e11f35d2438c58ea7ebf **/\n\n.envato-block__preview{overflow: visible;}\n\n/** End Block Kit CSS: 71-3-d415519effd9e11f35d2438c58ea7ebf **/\n\n

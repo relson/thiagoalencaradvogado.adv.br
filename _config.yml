@@ -1,0 +1,29 @@
+# Configurações do Site
+title: Thiago Alencar Advogados
+email: thiagoalencar@adv.br
+description: >-
+  Escritório de advocacia estratégica e inovadora. Especialista em Direito Tributário e Previdenciário.
+baseurl: "" 
+url: "https://thiagoalencaradvogado.adv.br" 
+github_username: relson
+lang: pt-BR
+
+# Configurações de Build
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# SEO e Redes Sociais
+twitter:
+  username: thiagoalencar
+  card: summary
+logo: /assets/uploads/logo.png
+
+# Itens a serem excluídos
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git

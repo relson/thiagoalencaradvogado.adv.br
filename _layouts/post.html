@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="card">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</p>
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>
+<a href="/" class="btn">← Voltar para o início</a>

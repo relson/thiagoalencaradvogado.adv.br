@@ -1,23 +1,16 @@
-# WordPress backup (440MB)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
 *.wpress
-temp.zip
-
-# Extracted WordPress content
-wpress_content/
-wpress_extracted/
-wpress_extracted2/
 wp-extracted/
-dist/
-
-# Jekyll
-docs/_site/
-docs/.jekyll-cache/
-docs/.sass-cache/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
+wp-site-full/
+extract_wpress.py
+wp_to_static.py
+generate_static_site.py
+build_static_site.py
+serve_site.py
+extract-wpress.ps1
 .vscode/
-.idea/

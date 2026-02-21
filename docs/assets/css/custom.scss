@@ -200,8 +200,11 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
 /* ===== HOME HERO ===== */
 .home-hero {
   text-align: center;
-  padding: 40px 20px 20px;
-  margin-bottom: 10px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark-bg) 100%);
+  border-radius: 12px;
+  margin: -20px -30px 30px;
+  color: var(--color-white);
 }
 .home-hero h1 {
   color: var(--color-white);
@@ -215,9 +218,17 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   max-width: 600px;
   margin: 0 auto 30px;
 }
+.home-hero .btn-outline {
+  color: var(--color-white) !important;
+  border-color: var(--color-white);
+}
+.home-hero .btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-secondary) !important;
+}
 .home-logo {
   max-width: 220px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   display: block;
 }
 
@@ -553,7 +564,7 @@ hr { border: none; border-top: 1px solid var(--color-border); margin: 40px 0; }
   .site-nav .trigger { background-color: var(--color-secondary); padding: 10px; }
   h1 { font-size: 1.5em; }
   h2 { font-size: 1.3em; }
-  .home-hero { padding: 20px 15px 10px; }
+  .home-hero { margin: -20px -15px 30px; padding: 40px 15px; }
   .home-hero h1 { font-size: 1.5em; }
   .btn, a.btn { padding: 12px 24px; font-size: 0.85em; display: block; text-align: center; }
   .center-btn { width: auto; }

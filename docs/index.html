@@ -289,9 +289,9 @@
         message: 'Olá! Vim pelo site e gostaria de mais informações.',
       },
       blog: {
-        'reforma-tributaria': 'https://thiagoalencar.rabbitagencia.com/como-preparar-sua-empresa-para-a-reforma-tributaria-no-mercado-imobiliario/',
-        'justica-ecossistema': 'https://thiagoalencar.rabbitagencia.com/o-brasil-no-diva-dos-100-milhoes-por-que-a-justica-real-exige-um-ecossistema-nao-apenas-um-processo/',
-        'fila-inss': 'https://thiagoalencar.rabbitagencia.com/a-fila-do-inss-em-niveis-historicos-impactos-juridicos-e-sociais-do-atraso-na-concessao-de-beneficios/',
+        'reforma-tributaria': 'blog/reforma-tributaria.html',
+        'justica-ecossistema': 'blog/justica-ecossistema.html',
+        'fila-inss': 'blog/fila-inss.html',
       },
       nav: ['inicio', 'escritorio', 'areas', 'historia', 'blog', 'contato'],
     };
@@ -313,8 +313,6 @@
       var key = el.getAttribute('data-blog-link');
       if (CONFIG.blog[key]) {
         el.href = CONFIG.blog[key];
-        el.target = '_blank';
-        el.rel = 'noopener noreferrer';
       }
     });
 

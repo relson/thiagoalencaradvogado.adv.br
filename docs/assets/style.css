@@ -1282,13 +1282,14 @@ ul { list-style: none; }
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 12px;
+    gap: 16px;
     padding-bottom: 8px;
+    justify-content: center;
   }
 
   .history__photo {
-    min-width: 45%;
-    max-width: 45%;
+    min-width: 75%;
+    max-width: 75%;
     scroll-snap-align: center;
     flex-shrink: 0;
   }

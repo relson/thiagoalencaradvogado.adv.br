@@ -1217,7 +1217,7 @@ ul { list-style: none; }
   }
 
   .hero__overlay {
-    background: rgba(11, 22, 38, 0.72);
+    background: rgba(11, 22, 38, 0.55);
   }
 
   .hero__content {
@@ -1226,8 +1226,10 @@ ul { list-style: none; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     max-width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    padding-bottom: 60px;
   }
 
   .hero__title {
@@ -1284,7 +1286,7 @@ ul { list-style: none; }
   }
 
   .history__photo {
-    min-width: 85%;
+    min-width: 70%;
     scroll-snap-align: center;
     flex-shrink: 0;
   }

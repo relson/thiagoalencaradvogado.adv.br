@@ -1213,7 +1213,7 @@ ul { list-style: none; }
   }
 
   .hero__bg-image {
-    object-position: center top;
+    object-position: center 20%;
   }
 
   .hero__overlay {
@@ -1229,7 +1229,8 @@ ul { list-style: none; }
     justify-content: flex-end;
     max-width: 100%;
     min-height: calc(100vh - var(--header-height));
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    padding-top: 65vh;
   }
 
   .hero__title {
@@ -1281,12 +1282,13 @@ ul { list-style: none; }
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 16px;
+    gap: 12px;
     padding-bottom: 8px;
   }
 
   .history__photo {
-    min-width: 70%;
+    min-width: 45%;
+    max-width: 45%;
     scroll-snap-align: center;
     flex-shrink: 0;
   }

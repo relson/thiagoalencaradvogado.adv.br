@@ -1155,7 +1155,24 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   :root { --header-height: 70px; }
 
-  /* Header mobile */
+  /* Header mobile — centralizado */
+  .header-inner {
+    justify-content: center;
+    position: relative;
+  }
+
+  .header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
   .header-nav {
     position: fixed;
     top: var(--header-height);
@@ -1188,12 +1205,11 @@ ul { list-style: none; }
     padding: 14px 28px;
   }
 
-  .menu-toggle { display: block; }
-
-  /* Hero mobile */
+  /* Hero mobile — centralizado */
   .hero {
-    min-height: auto;
-    padding: 120px 0 60px;
+    min-height: 100vh;
+    padding: 0;
+    padding-top: var(--header-height);
   }
 
   .hero__bg-image {
@@ -1201,24 +1217,36 @@ ul { list-style: none; }
   }
 
   .hero__overlay {
-    background: rgba(11, 22, 38, 0.82);
+    background: rgba(11, 22, 38, 0.72);
   }
 
   .hero__content {
     padding-left: 0;
-  }
-
-  .hero__title {
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  .hero__description {
-    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
   }
 
-  /* About mobile */
+  .hero__title {
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .hero__description {
+    font-size: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .btn-whatsapp {
+    justify-content: center;
+  }
+
+  /* About mobile — centralizado */
   .about { padding: 80px 0; }
   .about__grid {
     grid-template-columns: 1fr;
@@ -1226,31 +1254,20 @@ ul { list-style: none; }
   }
 
   .about__image-wrapper::before { display: none; }
+  .about__content { text-align: center; }
+  .about__label { text-align: center; }
+  .about__title { font-size: 2rem; text-align: center; }
+  .about__subtitle { text-align: center; }
+  .about__text { text-align: center; }
+  .btn-primary { display: block; text-align: center; }
 
-  .about__title { font-size: 2rem; }
-
-  /* Areas mobile */
+  /* Areas mobile — centralizado */
   .areas__grid,
   .areas__grid--3 { grid-template-columns: 1fr; }
 
-  /* Differentials mobile */
-  .diff__grid { grid-template-columns: 1fr; }
+  .section-header { text-align: center; }
 
-  /* Blog mobile */
-  .blog__grid { grid-template-columns: 1fr; }
-
-  /* Reviews carousel mobile */
-  .review-card { min-width: 100%; max-width: 100%; }
-  .reviews-carousel__btn { display: none; }
-  .reviews-carousel__track { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overflow-x: auto; }
-  .review-card { scroll-snap-align: start; }
-
-  /* General section padding */
-  .areas, .history, .differentials, .testimonials, .blog, .contact {
-    padding: 70px 0;
-  }
-
-  /* History photos mobile */
+  /* History mobile — fotos em carrossel horizontal centralizado */
   .history__layout {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1260,13 +1277,29 @@ ul { list-style: none; }
     position: static;
     flex-direction: row;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 8px;
   }
 
   .history__photo {
-    min-width: 70%;
+    min-width: 85%;
+    scroll-snap-align: center;
+    flex-shrink: 0;
   }
 
-  /* Differentials mobile */
+  .history__content-col { text-align: center; }
+  .history__heading { text-align: center; }
+  .history__title { text-align: center; }
+  .history__intro { text-align: center; }
+
+  .timeline { text-align: left; }
+
+  .history__quote { text-align: center; }
+  .history__cta { justify-content: center; margin-left: auto; margin-right: auto; }
+
+  /* Differentials mobile — centralizado */
   .diff__layout {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1280,17 +1313,90 @@ ul { list-style: none; }
     text-align: center;
   }
 
+  .diff__cta {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .diff__grid { grid-template-columns: 1fr; }
 
-  /* Footer mobile */
+  .diff-card {
+    text-align: center;
+  }
+
+  .diff-card__icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Reviews carousel mobile — 1 card por vez, centralizado */
+  .reviews-carousel { gap: 0; }
+  .review-card { min-width: 100%; max-width: 100%; }
+  .reviews-carousel__btn { display: none; }
+  .reviews-carousel__track {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .reviews-carousel__track::-webkit-scrollbar { display: none; }
+  .review-card { scroll-snap-align: center; }
+  .review-card__text { text-align: center; }
+  .review-card__header { justify-content: center; }
+  .review-card__date { text-align: center; }
+
+  /* Blog mobile — cards centralizados, 1 coluna */
+  .blog__grid { grid-template-columns: 1fr; }
+
+  .blog-card__body { text-align: center; }
+  .blog-card__link { display: block; text-align: center; }
+
+  /* Contact mobile — centralizado */
+  .contact__form { text-align: center; }
+  .contact__submit { width: 100%; }
+
+  /* Footer mobile — centralizado */
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 32px;
+    text-align: center;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__nav {
+    text-align: center;
+  }
+
+  .footer__contact-list li {
+    justify-content: center;
+  }
+
+  .footer__col-title {
+    text-align: center;
+  }
+
+  .footer__map {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .footer__bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* General section padding */
+  .areas, .history, .differentials, .testimonials, .blog, .contact {
+    padding: 70px 0;
   }
 }
 

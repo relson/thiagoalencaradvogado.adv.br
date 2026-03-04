@@ -41,10 +41,13 @@
 
   <!-- ========== HERO ========== -->
   <section id="inicio" class="hero" aria-label="Apresentação principal">
-    <img src="assets/uploads/2026/02/Thiago_header.png"
-         alt="Thiago Alencar — Advogado"
-         class="hero__bg-image"
-         fetchpriority="high">
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/uploads/2026/02/Thiago_mobile.png">
+      <img src="assets/uploads/2026/02/Thiago_header.png"
+           alt="Thiago Alencar — Advogado"
+           class="hero__bg-image"
+           fetchpriority="high">
+    </picture>
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <div class="container hero__content">

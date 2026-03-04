@@ -29,6 +29,7 @@
         <a href="#areas" class="header-nav__link">Áreas de Atuação</a>
         <a href="#historia" class="header-nav__link">Sobre Mim</a>
         <a href="#depoimentos" class="header-nav__link">Clientes</a>
+        <a href="#blog" class="header-nav__link">Blog</a>
         <a href="#contato" class="header-nav__link">Contatos</a>
         <a href="#" class="header-cta" data-whatsapp-link aria-label="Atendimento via WhatsApp">
           Atendimento
@@ -40,6 +41,10 @@
 
   <!-- ========== HERO ========== -->
   <section id="inicio" class="hero" aria-label="Apresentação principal">
+    <img src="assets/uploads/2026/02/Thiago_header.png"
+         alt="Thiago Alencar — Advogado"
+         class="hero__bg-image"
+         fetchpriority="high">
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <div class="container hero__content">
@@ -62,8 +67,8 @@
   <section id="escritorio" class="about" aria-labelledby="about-title">
     <div class="container about__grid">
       <div class="about__image-wrapper">
-        <img src="assets/uploads/2026/02/Thiago-ADV.webp"
-             alt="Thiago Alencar — Advogado"
+        <img src="assets/uploads/2026/02/2-x-Logo-em-3D-3-768x833.png"
+             alt="Alencar Advogados — Logo 3D"
              loading="lazy">
       </div>
       <div class="about__content">
@@ -124,42 +129,68 @@
   <!-- ========== MINHA HISTÓRIA ========== -->
   <section id="historia" class="history" aria-labelledby="history-title">
     <div class="container">
-      <div class="section-header">
-        <span class="section-header__label">Trajetória</span>
-        <h2 id="history-title" class="section-header__title">Minha História</h2>
-        <p class="section-header__desc">Uma trajetória marcada por determinação, perseverança e compromisso com o Direito.</p>
-      </div>
+      <div class="history__layout">
+        <!-- Coluna esquerda: fotos empilhadas -->
+        <div class="history__photos">
+          <div class="history__photo">
+            <img src="assets/uploads/2026/02/Thiago_Justica.png" alt="Thiago Alencar — Justiça" loading="lazy">
+          </div>
+          <div class="history__photo">
+            <img src="assets/uploads/2026/02/Thiago_Oab.png" alt="Thiago Alencar — OAB Tocantins" loading="lazy">
+          </div>
+        </div>
 
-      <div class="timeline" role="list">
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">2007</span>
-          <h3 class="timeline__title">O início da jornada</h3>
-          <p class="timeline__desc">Aos 18 anos, iniciou atuação na Assembleia Legislativa, vivenciando de perto a estrutura do poder público.</p>
-        </div>
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">2008</span>
-          <h3 class="timeline__title">Aprovação em concurso público</h3>
-          <p class="timeline__desc">Aos 19 anos, aprovado em concurso para o Banco do Brasil, demonstrando disciplina e capacidade técnica.</p>
-        </div>
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">2010–2011</span>
-          <h3 class="timeline__title">Defensoria Pública</h3>
-          <p class="timeline__desc">Conquistou o 2º lugar no processo seletivo da CEJUS. Atuou no TRE e no Fórum de Araguaína, Tocantins.</p>
-        </div>
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">2013–2020</span>
-          <h3 class="timeline__title">Liderança na gestão pública</h3>
-          <p class="timeline__desc">Diretor do Diário Oficial da Prefeitura de Araguaína por sete anos, contribuindo para transparência administrativa.</p>
-        </div>
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">2025</span>
-          <h3 class="timeline__title">Conquista da advocacia</h3>
-          <p class="timeline__desc">Tornou-se advogado inscrito na OAB/TO, consolidando uma trajetória construída com estudo e propósito.</p>
-        </div>
-        <div class="timeline__item" role="listitem">
-          <span class="timeline__year">Presente</span>
-          <h3 class="timeline__title">Compromisso e visão estratégica</h3>
-          <p class="timeline__desc">CEO do Grupo Alencar, empresário, professor e palestrante. Dedicado às áreas Trabalhista, Previdenciária, Cível, Criminal, Tributária, Administrativa e Eleitoral.</p>
+        <!-- Coluna direita: título + timeline -->
+        <div class="history__content-col">
+          <div class="history__heading">
+            <h2 id="history-title" class="history__title">Minha História</h2>
+            <p class="history__intro">A trajetória de <strong style="color:#fff">Thiago Alencar</strong> é marcada por determinação, perseverança e compromisso com o Direito e o serviço público. Sua história profissional começou cedo, aos 18 anos, quando deu os primeiros passos na vida pública.</p>
+          </div>
+
+          <div class="timeline" role="list">
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2007</span>
+              <h3 class="timeline__title">O início da jornada</h3>
+              <p class="timeline__desc">Aos 18 anos, iniciou atuação na Assembleia Legislativa, vivenciando de perto a estrutura do poder público.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2008</span>
+              <h3 class="timeline__title">Aprovação em concurso público</h3>
+              <p class="timeline__desc">Aos 19 anos, aprovado em concurso para o Banco do Brasil, demonstrando disciplina e capacidade técnica.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2009</span>
+              <h3 class="timeline__title">Consolidação da vocação jurídica</h3>
+              <p class="timeline__desc">Optou por seguir novos desafios na iniciativa privada, ingressando no escritório Ferreira Advocacia, momento em que sua vocação para o Direito começou a se fortalecer.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2010–2011</span>
+              <h3 class="timeline__title">Atuação na Defensoria Pública</h3>
+              <p class="timeline__desc">Durante a graduação em Direito pela Universidade Católica, conquistou o 2º lugar no processo seletivo da CEJUS. Atuou no TRE e no Fórum de Araguaína, Tocantins.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2013–2020</span>
+              <h3 class="timeline__title">Liderança na gestão pública</h3>
+              <p class="timeline__desc">Diretor do Diário Oficial da Prefeitura de Araguaína por sete anos, contribuindo para transparência administrativa.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">2025</span>
+              <h3 class="timeline__title">Conquista da advocacia</h3>
+              <p class="timeline__desc">Tornou-se advogado inscrito na OAB/TO, consolidando uma trajetória construída com estudo, disciplina e propósito.</p>
+            </div>
+            <div class="timeline__item" role="listitem">
+              <span class="timeline__year">Presente</span>
+              <h3 class="timeline__title">Compromisso e visão estratégica</h3>
+              <p class="timeline__desc">CEO do Grupo Alencar, empresário, professor e palestrante. Dedicado às áreas Trabalhista, Previdenciária, Cível, Criminal, Tributária, Administrativa e Eleitoral.</p>
+            </div>
+          </div>
+
+          <p class="history__quote">"A justiça não pode esperar. Cada causa é uma vida, cada cliente é uma história."</p>
+
+          <a href="#" class="history__cta" data-whatsapp-link>
+            Quero um Atendimento
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -168,29 +199,42 @@
   <!-- ========== POR QUE NOS ESCOLHER ========== -->
   <section id="diferenciais" class="differentials" aria-labelledby="diff-title">
     <div class="container">
-      <div class="section-header">
-        <span class="section-header__label">Diferenciais</span>
-        <h2 id="diff-title" class="section-header__title">Por que escolher Alencar Advogados?</h2>
-        <p class="section-header__desc">Prática jurídica baseada na ética e na transparência, com atendimento atento e foco na segurança jurídica.</p>
-      </div>
+      <div class="diff__layout">
+        <!-- Coluna esquerda: texto + CTA -->
+        <div class="diff__text">
+          <div class="section-header">
+            <h2 id="diff-title" class="section-header__title">Por que escolher Alencar Advogados?</h2>
+            <p class="section-header__desc">Prática jurídica baseada na ética e na transparência, com atendimento atento e foco na segurança jurídica.</p>
+          </div>
+          <a href="#" class="diff__cta" data-whatsapp-link>
+            Quero um Atendimento
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
 
-      <div class="diff__grid">
-        <article class="diff-card">
-          <h3 class="diff-card__title">Atuação personalizada</h3>
-          <p class="diff-card__desc">Avaliamos cada situação com atenção para indicar a orientação jurídica mais adequada ao seu caso.</p>
-        </article>
-        <article class="diff-card">
-          <h3 class="diff-card__title">Sigilo absoluto</h3>
-          <p class="diff-card__desc">Todas as informações são tratadas com confidencialidade, respeito e segurança em todas as etapas.</p>
-        </article>
-        <article class="diff-card">
-          <h3 class="diff-card__title">Atuação técnica e ética</h3>
-          <p class="diff-card__desc">Gestão cuidadosa das demandas jurídicas, aliando clareza, profissionalismo e responsabilidade.</p>
-        </article>
-        <article class="diff-card">
-          <h3 class="diff-card__title">Atendimento 100% online</h3>
-          <p class="diff-card__desc">Atendimento realizado de forma online, permitindo acompanhamento jurídico de qualquer região do Brasil.</p>
-        </article>
+        <!-- Coluna direita: 4 cards em grid 2x2 -->
+        <div class="diff__grid">
+          <article class="diff-card">
+            <img class="diff-card__icon" src="assets/uploads/2026/02/justica.png" alt="Justiça" width="64" height="64" loading="lazy">
+            <h3 class="diff-card__title">Atuação personalizada</h3>
+            <p class="diff-card__desc">Avaliamos cada situação com atenção para indicar a orientação jurídica mais adequada ao seu caso.</p>
+          </article>
+          <article class="diff-card">
+            <img class="diff-card__icon" src="assets/uploads/2026/02/justica.png" alt="Justiça" width="64" height="64" loading="lazy">
+            <h3 class="diff-card__title">Atuação técnica e ética</h3>
+            <p class="diff-card__desc">Gestão cuidadosa das demandas jurídicas, aliando clareza, profissionalismo e responsabilidade.</p>
+          </article>
+          <article class="diff-card">
+            <img class="diff-card__icon" src="assets/uploads/2026/02/justica.png" alt="Justiça" width="64" height="64" loading="lazy">
+            <h3 class="diff-card__title">Sigilo absoluto</h3>
+            <p class="diff-card__desc">Todas as informações são tratadas com confidencialidade, respeito e segurança em todas as etapas.</p>
+          </article>
+          <article class="diff-card">
+            <img class="diff-card__icon" src="assets/uploads/2026/02/justica.png" alt="Justiça" width="64" height="64" loading="lazy">
+            <h3 class="diff-card__title">Atendimento 100% online</h3>
+            <p class="diff-card__desc">Atendimento realizado de forma online, permitindo acompanhamento jurídico de qualquer região do Brasil.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -204,6 +248,98 @@
         <div class="testimonials__stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
         <p class="testimonials__note">Somos avaliados com <strong>5 estrelas no Google</strong>, reflexo do compromisso com um atendimento ético e responsável.</p>
       </div>
+
+      <div class="reviews-carousel" aria-label="Avaliações do Google">
+        <button class="reviews-carousel__btn reviews-carousel__btn--prev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="reviews-carousel__track">
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">MC</div>
+              <div>
+                <p class="review-card__name">Mariane Castro</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Fui muito bem atendido desde o primeiro contato. A equipe da Alencar Advogados demonstrou profissionalismo, clareza nas orientações e total comprometimento com o meu caso.</p>
+            <p class="review-card__date">3 semanas atrás</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">CF</div>
+              <div>
+                <p class="review-card__name">Carla Fontes</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Encontrei na Alencar Advogados um atendimento humanizado e estratégico. Sempre tive retorno rápido e segurança em cada etapa do processo.</p>
+            <p class="review-card__date">3 semanas atrás</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">CT</div>
+              <div>
+                <p class="review-card__name">Conceição Texeira</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Recomendo a Alencar Advogados pela seriedade, transparência e excelência no atendimento. Um escritório que realmente se preocupa com o cliente.</p>
+            <p class="review-card__date">3 semanas atrás</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">JS</div>
+              <div>
+                <p class="review-card__name">Jean Santos Conceição</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Gostei muito, ótima localização, fácil acesso, um bom atendimento e rampa de acessibilidade, tudo muito bom.</p>
+            <p class="review-card__date">1 mês atrás</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">AM</div>
+              <div>
+                <p class="review-card__name">Antonielson Miranda da Silva</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Excelente atendimento e profissionalismo. Local Guide com experiência positiva no escritório.</p>
+            <p class="review-card__date">3 anos atrás</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">LD</div>
+              <div>
+                <p class="review-card__name">Lorena Dias da Silva</p>
+                <div class="review-card__stars">★★★★★</div>
+              </div>
+              <svg class="review-card__google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <p class="review-card__text">Atendimento de qualidade e muita dedicação ao cliente. Recomendo.</p>
+            <p class="review-card__date">4 anos atrás</p>
+          </div>
+        </div>
+
+        <button class="reviews-carousel__btn reviews-carousel__btn--next" aria-label="Próximo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <div class="reviews-carousel__dots" aria-label="Indicadores"></div>
     </div>
   </section>
 
@@ -218,7 +354,16 @@
 
       <div class="blog__grid">
         <article class="blog-card">
-          <img class="blog-card__image" src="assets/uploads/2023/03/planejamento-previdenciario.png" alt="Reforma Tributária no mercado imobiliário" loading="lazy" width="400" height="200">
+          <img class="blog-card__image" src="assets/uploads/2026/02/Thalles_Thiago_Horizontal.png" alt="Thalles Alencar assume cadeira na Câmara de Araguaína" loading="lazy" width="400" height="200">
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">Thalles Alencar assume cadeira na Câmara Municipal de Araguaína</h3>
+            <p class="blog-card__excerpt">Superintendente de Vigilância em Saúde assume mandato pelo PL e amplia presença do grupo político em Araguaína.</p>
+            <a href="#" class="blog-card__link" data-blog-link="thalles-alencar">Ler mais →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img class="blog-card__image" src="assets/uploads/2026/02/Revisao-INSS-1-2-1-1-768x439.webp" alt="Reforma Tributária no mercado imobiliário" loading="lazy" width="400" height="200">
           <div class="blog-card__body">
             <h3 class="blog-card__title">Como preparar sua empresa para a Reforma Tributária no mercado imobiliário</h3>
             <p class="blog-card__excerpt">A Reforma Tributária exige adaptação prática. Entenda os principais pontos para ajustar sua empresa ao novo cenário.</p>
@@ -227,7 +372,7 @@
         </article>
 
         <article class="blog-card">
-          <img class="blog-card__image" src="assets/uploads/2023/03/O-que-e-beneficio-previdenciario_-Veja-como-saber-seus-direitos.jpeg" alt="Justiça e ecossistema jurídico" loading="lazy" width="400" height="200">
+          <img class="blog-card__image" src="assets/uploads/2026/02/4-x-Foto-fachada-do-forum.jpg-1024x682.jpeg" alt="Justiça e ecossistema jurídico" loading="lazy" width="400" height="200">
           <div class="blog-card__body">
             <h3 class="blog-card__title">O Brasil no Divã dos 100 Milhões: Por que a Justiça Real Exige um Ecossistema</h3>
             <p class="blog-card__excerpt">No Brasil, o Direito não é uma teoria abstrata; é uma realidade que impacta milhões de vidas diariamente.</p>
@@ -236,7 +381,7 @@
         </article>
 
         <article class="blog-card">
-          <img class="blog-card__image" src="assets/uploads/2023/03/ChatGPT-Image-24-de-jan.-de-2026-13_12_29.png" alt="Fila do INSS" loading="lazy" width="400" height="200">
+          <img class="blog-card__image" src="assets/uploads/2026/02/WhatsApp-Image-2026-02-06-at-18.08.57-768x527.jpeg" alt="Fila do INSS" loading="lazy" width="400" height="200">
           <div class="blog-card__body">
             <h3 class="blog-card__title">A fila do INSS em níveis históricos: impactos jurídicos e sociais</h3>
             <p class="blog-card__excerpt">A fila de pedidos pendentes no INSS atingiu marca histórica em 2026, ultrapassando 3 milhões de solicitações.</p>
@@ -251,24 +396,91 @@
   <section id="contato" class="contact" aria-labelledby="contact-title">
     <div class="container">
       <h2 id="contact-title" class="contact__title">Entre em Contato</h2>
-      <p class="contact__desc">Estamos prontos para esclarecer suas dúvidas e orientar você com segurança jurídica.</p>
-      <a href="#" class="btn-whatsapp--gold" data-whatsapp-link aria-label="Entrar em contato via WhatsApp">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Quero um Atendimento
-      </a>
+      <p class="contact__desc">Estamos prontos para esclarecer suas dúvidas e orientar você com segurança.</p>
+      <form class="contact__form" id="contact-form" aria-label="Formulário de contato">
+        <input type="text" class="contact__input" name="nome" placeholder="Nome:" required aria-label="Nome">
+        <input type="email" class="contact__input" name="email" placeholder="E-mail:" required aria-label="E-mail">
+        <input type="tel" class="contact__input" name="telefone" placeholder="Telefone:" aria-label="Telefone">
+        <textarea class="contact__textarea" name="mensagem" placeholder="Mensagem" required aria-label="Mensagem"></textarea>
+        <button type="submit" class="contact__submit">Enviar Mensagem</button>
+      </form>
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer__logo">
-        <img src="assets/uploads/2026/02/Logo-Thiago-ADV.webp" alt="Alencar Advogados" width="140" height="38" loading="lazy">
+      <div class="footer__grid">
+        <!-- Coluna 1: Logo + Redes Sociais -->
+        <div>
+          <div class="footer__logo">
+            <img src="assets/uploads/2026/02/IMG_5556-1024x569-1.webp" alt="Alencar Advogados" loading="lazy">
+          </div>
+          <div class="footer__socials" style="margin-top:20px">
+            <a href="https://www.facebook.com/thiago.alencar.90/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/thiagoalencarjus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCA5pzsCgTj23Ro7uD0EAtww" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div>
+          <h3 class="footer__col-title">Navegação</h3>
+          <ul class="footer__nav">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#escritorio">Escritório</a></li>
+            <li><a href="#areas">Áreas de Atuação</a></li>
+            <li><a href="#historia">Sobre Mim</a></li>
+            <li><a href="#depoimentos">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2: Contatos -->
+        <div>
+          <h3 class="footer__col-title">Contatos</h3>
+          <ul class="footer__contact-list">
+            <li>
+              <svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="#" data-whatsapp-link>(63) 9245-4640</a>
+            </li>
+            <li>
+              <svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+556392454640">(63) 9245-4640</a>
+            </li>
+            <li>
+              <svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:thiagoalencarjus@gmail.com">thiagoalencarjus@gmail.com</a>
+            </li>
+            <li>
+              <svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              09:00 às 17h30 · Seg a Sex
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Localização -->
+        <div>
+          <h3 class="footer__col-title">Localização</h3>
+          <div class="footer__map">
+            <iframe loading="lazy"
+              src="https://maps.google.com/maps?q=%20Alencar%20Advogados%20R.%20Rui%20Barbosa%2C%20110%20-%20St.%20Central%2C%20Aragua%C3%ADna%20-%20TO%2C%2077805-030&t=m&z=17&output=embed&iwloc=near"
+              title="Alencar Advogados — R. Rui Barbosa, 110 - St. Central, Araguaína - TO"
+              aria-label="Mapa do escritório Alencar Advogados"
+              allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-      <p class="footer__text">Alencar Advogados — Soluções jurídicas estratégicas</p>
-      <p class="footer__text">R. Rui Barbosa, 110 — St. Central, Araguaína — TO, 77805-030</p>
-      <p class="footer__text">Atendimento em todo o Brasil</p>
-      <p class="footer__copy">&copy; 2026 Alencar Advogados. Todos os direitos reservados.</p>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; Copyright 2026 Thiago Alencar Advogado — Todos os direitos reservados</p>
+      </div>
     </div>
   </footer>
 
@@ -292,6 +504,7 @@
         'reforma-tributaria': 'blog/reforma-tributaria.html',
         'justica-ecossistema': 'blog/justica-ecossistema.html',
         'fila-inss': 'blog/fila-inss.html',
+        'thalles-alencar': 'blog/thalles-alencar-posse-araguaina.html',
       },
       nav: ['inicio', 'escritorio', 'areas', 'historia', 'blog', 'contato'],
     };
@@ -348,6 +561,107 @@
         }
       });
     });
+
+    /* ---- Carrossel de avaliações ---- */
+    (function initReviewsCarousel() {
+      var track = document.querySelector('.reviews-carousel__track');
+      var prevBtn = document.querySelector('.reviews-carousel__btn--prev');
+      var nextBtn = document.querySelector('.reviews-carousel__btn--next');
+      var dotsContainer = document.querySelector('.reviews-carousel__dots');
+      if (!track || !dotsContainer) return;
+
+      var cards = track.querySelectorAll('.review-card');
+      var totalCards = cards.length;
+
+      function getVisibleCount() {
+        return window.innerWidth >= 768 ? 2 : 1;
+      }
+
+      var currentIndex = 0;
+
+      function buildDots() {
+        dotsContainer.innerHTML = '';
+        var visible = getVisibleCount();
+        var pages = Math.ceil(totalCards / visible);
+        if (pages < 1) pages = 1;
+        for (var i = 0; i < pages; i++) {
+          var dot = document.createElement('button');
+          dot.className = 'reviews-carousel__dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Ir para avaliação ' + (i + 1));
+          dot.dataset.index = i;
+          dot.addEventListener('click', function() {
+            goTo(parseInt(this.dataset.index));
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function goTo(index) {
+        var visible = getVisibleCount();
+        var pages = Math.ceil(totalCards / visible);
+        if (pages < 1) pages = 1;
+        if (index < 0) index = 0;
+        if (index >= pages) index = pages - 1;
+        currentIndex = index;
+        var cardIndex = currentIndex * visible;
+        if (cardIndex >= totalCards) cardIndex = totalCards - 1;
+        var card = cards[cardIndex];
+        if (card) {
+          track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: 'smooth' });
+        }
+        updateDots();
+      }
+
+      function updateDots() {
+        var dots = dotsContainer.querySelectorAll('.reviews-carousel__dot');
+        dots.forEach(function(d, i) {
+          d.classList.toggle('active', i === currentIndex);
+        });
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', function() { goTo(currentIndex - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function() { goTo(currentIndex + 1); });
+
+      /* Atualizar dot ativo ao rolar manualmente (mobile) */
+      var scrollTimer;
+      track.addEventListener('scroll', function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
+          var scrollLeft = track.scrollLeft;
+          var closest = 0;
+          var minDist = Infinity;
+          cards.forEach(function(card, i) {
+            var dist = Math.abs(card.offsetLeft - track.offsetLeft - scrollLeft);
+            if (dist < minDist) { minDist = dist; closest = i; }
+          });
+          var visible = getVisibleCount();
+          currentIndex = Math.round(closest / visible);
+          updateDots();
+        }, 100);
+      });
+
+      buildDots();
+      window.addEventListener('resize', function() { buildDots(); goTo(0); });
+    })();
+
+    /* ---- Formulário de contato → WhatsApp ---- */
+    var form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var nome = form.nome.value.trim();
+        var email = form.email.value.trim();
+        var telefone = form.telefone.value.trim();
+        var mensagem = form.mensagem.value.trim();
+        var texto = 'Olá! Vim pelo site.\n\n'
+          + 'Nome: ' + nome + '\n'
+          + 'E-mail: ' + email + '\n'
+          + (telefone ? 'Telefone: ' + telefone + '\n' : '')
+          + 'Mensagem: ' + mensagem;
+        var url = 'https://wa.me/' + CONFIG.whatsapp.number + '?text=' + encodeURIComponent(texto);
+        window.open(url, '_blank');
+      });
+    }
   })();
   </script>
 

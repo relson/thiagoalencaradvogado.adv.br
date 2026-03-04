@@ -9,92 +9,138 @@
   <link rel="icon" href="../assets/uploads/2026/02/cropped-Alencar-ADV-32x32.webp" sizes="32x32">
   <link rel="apple-touch-icon" href="../assets/uploads/2026/02/cropped-Alencar-ADV-180x180.webp">
   <link rel="stylesheet" href="../assets/style.css">
-  <style>
-    .post-page { padding-top: calc(var(--header-height) + 60px); padding-bottom: 80px; background: var(--color-offwhite); min-height: 100vh; }
-    .post-container { max-width: 780px; margin: 0 auto; width: 92%; }
-    .post-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; color: var(--color-gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 32px; transition: var(--transition); }
-    .post-back:hover { color: var(--color-navy); }
-    .post-title { font-family: var(--font-serif); font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--color-navy); line-height: 1.2; margin-bottom: 12px; }
-    .post-meta { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-gray-500); margin-bottom: 40px; }
-    .post-content { font-family: var(--font-sans); font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); }
-    .post-content h2 { font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700; color: var(--color-navy); margin: 40px 0 16px; }
-    .post-content p { margin-bottom: 18px; }
-    .post-content strong { color: var(--color-text-dark); }
-    .post-author { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--color-gray-200); font-family: var(--font-sans); font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; }
-    .post-cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 32px; padding: 14px 30px; background: var(--color-navy); color: var(--color-white); font-family: var(--font-sans); font-weight: 700; font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; border-radius: var(--radius-sm); transition: var(--transition); }
-    .post-cta:hover { background: var(--color-gold); }
-  </style>
+  <link rel="stylesheet" href="../assets/blog.css">
 </head>
 <body>
-
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="../index.html" class="header-logo" aria-label="Alencar Advogados — Página inicial">
         <img src="../assets/uploads/2026/02/Logo-Thiago-ADV.webp" alt="Thiago Alencar Advogado" class="site-logo">
       </a>
-      <nav class="header-nav" role="navigation" aria-label="Menu principal">
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <nav id="main-nav" class="header-nav" role="navigation" aria-label="Menu principal">
         <a href="../index.html#inicio" class="header-nav__link">Início</a>
         <a href="../index.html#escritorio" class="header-nav__link">Escritório</a>
         <a href="../index.html#areas" class="header-nav__link">Áreas de Atuação</a>
         <a href="../index.html#historia" class="header-nav__link">Sobre Mim</a>
         <a href="../index.html#depoimentos" class="header-nav__link">Clientes</a>
+        <a href="../index.html#blog" class="header-nav__link">Blog</a>
         <a href="../index.html#contato" class="header-nav__link">Contatos</a>
+        <a href="#" class="header-cta" data-whatsapp-link aria-label="Atendimento via WhatsApp">Atendimento
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
       </nav>
     </div>
   </header>
-
   <main class="post-page">
-    <div class="post-container">
-      <a href="../index.html#blog" class="post-back">← Voltar ao Blog</a>
-      <h1 class="post-title">A fila do INSS em níveis históricos: impactos jurídicos e sociais do atraso na concessão de benefícios</h1>
-      <p class="post-meta">6 de fevereiro de 2026 · Thiago Rodrigues Alencar</p>
+    <div class="post-layout">
+      <article class="post-main">
+        <a href="../index.html#blog" class="post-back">← Voltar ao Blog</a>
+        <h1 class="post-title">A fila do INSS em níveis históricos: impactos jurídicos e sociais do atraso na concessão de benefícios</h1>
+        <p class="post-meta">6 de fevereiro de 2026 · Thiago Rodrigues Alencar</p>
+        <img src="../assets/uploads/2026/02/WhatsApp-Image-2026-02-06-at-18.08.57-768x527.jpeg" alt="Fila do INSS" class="post-hero" loading="lazy">
 
-      <div class="post-content">
-        <p>A fila de pedidos pendentes no Instituto Nacional do Seguro Social (INSS) atingiu marca histórica no início de 2026, ultrapassando 3 milhões de requerimentos aguardando análise. O recorde expõe a dificuldade estrutural do órgão em atender, em prazo razoável, às demandas da população segurada.</p>
-
-        <h2>O descumprimento do prazo legal</h2>
-        <p>A legislação previdenciária estabelece que os pedidos devem ser analisados em até 45 dias, prazo que pode ser prorrogado apenas em situações justificadas. Contudo, mais da metade dos requerimentos represados já ultrapassou esse limite, configurando descumprimento reiterado do dever de eficiência administrativa.</p>
-        <p>Para muitos segurados, o benefício representa a única fonte de renda. A demora excessiva viola princípios constitucionais fundamentais, como a dignidade da pessoa humana e o direito à razoável duração do processo administrativo.</p>
-
-        <h2>Judicialização como resposta</h2>
-        <p>Diante da inércia do INSS, crescem as ações judiciais para obter análise ou implantação de benefícios. Mandados de segurança, ações de obrigação de fazer e pedidos de tutela de urgência tornaram-se instrumentos frequentes, transferindo ao Judiciário uma demanda que deveria ser resolvida administrativamente.</p>
-
-        <h2>Medidas adotadas e seus limites</h2>
-        <p>O governo implementou a fila nacional unificada, permitindo que servidores de diferentes regiões analisem processos de qualquer localidade. Também foram anunciados investimentos em contratação de pessoal, reforço de perícias médicas e modernização digital.</p>
-        <p>Apesar das iniciativas, o problema tem caráter estrutural: defasagem histórica de servidores, aumento da demanda previdenciária e complexidade dos procedimentos internos dificultam soluções imediatas.</p>
-
-        <h2>Conclusão</h2>
-        <p>O crescimento recorde da fila do INSS representa uma crise que afeta milhões de brasileiros, especialmente os mais vulneráveis. Mais que um problema de gestão, trata-se de questão de efetividade de direitos fundamentais.</p>
-        <p>Enquanto soluções estruturais não produzem resultados, o acompanhamento jurídico especializado torna-se essencial para orientar segurados sobre seus direitos e as medidas cabíveis contra a demora excessiva.</p>
-      </div>
-
-      <div class="post-author">
-        <strong>Thiago Rodrigues Alencar</strong><br>
-        OAB/TO 5.586<br>
-        Advogado especializado em Direito Previdenciário<br>
-        📍 Araguaína – Tocantins
-      </div>
-
-      <a href="#" class="post-cta" data-whatsapp-link>Precisa de orientação previdenciária? Fale conosco</a>
+        <div class="post-content">
+          <p>A fila de pedidos pendentes no Instituto Nacional do Seguro Social (INSS) atingiu marca histórica no início de 2026, ultrapassando 3 milhões de requerimentos aguardando análise. O recorde expõe a dificuldade estrutural do órgão em atender, em prazo razoável, às demandas da população segurada.</p>
+          <h2>O descumprimento do prazo legal</h2>
+          <p>A legislação previdenciária estabelece que os pedidos devem ser analisados em até 45 dias, prazo que pode ser prorrogado apenas em situações justificadas. Contudo, mais da metade dos requerimentos represados já ultrapassou esse limite, configurando descumprimento reiterado do dever de eficiência administrativa.</p>
+          <p>Para muitos segurados, o benefício representa a única fonte de renda. A demora excessiva viola princípios constitucionais fundamentais, como a dignidade da pessoa humana e o direito à razoável duração do processo administrativo.</p>
+          <h2>Judicialização como resposta</h2>
+          <p>Diante da inércia do INSS, crescem as ações judiciais para obter análise ou implantação de benefícios. Mandados de segurança, ações de obrigação de fazer e pedidos de tutela de urgência tornaram-se instrumentos frequentes, transferindo ao Judiciário uma demanda que deveria ser resolvida administrativamente.</p>
+          <h2>Medidas adotadas e seus limites</h2>
+          <p>O governo implementou a fila nacional unificada, permitindo que servidores de diferentes regiões analisem processos de qualquer localidade. Também foram anunciados investimentos em contratação de pessoal, reforço de perícias médicas e modernização digital.</p>
+          <p>Apesar das iniciativas, o problema tem caráter estrutural: defasagem histórica de servidores, aumento da demanda previdenciária e complexidade dos procedimentos internos dificultam soluções imediatas.</p>
+          <h2>Conclusão</h2>
+          <p>O crescimento recorde da fila do INSS representa uma crise que afeta milhões de brasileiros, especialmente os mais vulneráveis. Mais que um problema de gestão, trata-se de questão de efetividade de direitos fundamentais.</p>
+          <p>Enquanto soluções estruturais não produzem resultados, o acompanhamento jurídico especializado torna-se essencial para orientar segurados sobre seus direitos e as medidas cabíveis contra a demora excessiva.</p>
+        </div>
+        <div class="post-author">
+          <strong>Thiago Rodrigues Alencar</strong><br>OAB/TO 5.586<br>Advogado especializado em Direito Previdenciário<br>📍 Araguaína – Tocantins
+        </div>
+        <a href="#" class="post-cta" data-whatsapp-link>Precisa de orientação previdenciária? Fale conosco</a>
+        <section class="comments-section">
+          <h2 class="comments-title">Deixe um comentário</h2>
+          <p class="comments-note">Seu comentário será enviado via WhatsApp para nossa equipe.</p>
+          <form class="comment-form" id="comment-form">
+            <textarea name="comentario" placeholder="Comentário *" required></textarea>
+            <div class="comment-form__row">
+              <input type="text" name="nome" placeholder="Nome *" required>
+              <input type="email" name="email" placeholder="E-mail *" required>
+            </div>
+            <input type="url" name="site" placeholder="Site">
+            <label class="comment-form__check">
+              <input type="checkbox" name="salvar"> Salvar meus dados neste navegador para a próxima vez que eu comentar.
+            </label>
+            <button type="submit">Publicar comentário</button>
+          </form>
+        </section>
+      </article>
+      <aside class="post-sidebar">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Compartilhe</h3>
+          <div class="share-links">
+            <a class="share-link" id="share-fb" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a class="share-link" id="share-tw" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Twitter"><svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            <a class="share-link" id="share-wa" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Mais Posts</h3>
+          <a href="reforma-tributaria.html" class="related-post"><img src="../assets/uploads/2026/02/Revisao-INSS-1-2-1-1-768x439.webp" alt="Reforma Tributária" class="related-post__img"><span class="related-post__title">Como preparar sua empresa para a Reforma Tributária no mercado imobiliário</span></a>
+          <a href="justica-ecossistema.html" class="related-post"><img src="../assets/uploads/2026/02/4-x-Foto-fachada-do-forum.jpg-1024x682.jpeg" alt="Fachada do Fórum" class="related-post__img"><span class="related-post__title">O Brasil no Divã dos 100 Milhões: Por que a Justiça Real Exige um Ecossistema</span></a>
+          <a href="thalles-alencar-posse-araguaina.html" class="related-post"><img src="../assets/uploads/2026/02/Thalles_Thiago_Horizontal.png" alt="Thalles Alencar" class="related-post__img"><span class="related-post__title">Thalles Alencar assume cadeira na Câmara Municipal de Araguaína</span></a>
+        </div>
+      </aside>
     </div>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer__logo">
-        <img src="../assets/uploads/2026/02/Logo-Thiago-ADV.webp" alt="Alencar Advogados" width="140" height="38" loading="lazy">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="../assets/uploads/2026/02/IMG_5556-1024x569-1.webp" alt="Alencar Advogados" loading="lazy"></div>
+          <div class="footer__socials" style="margin-top:20px">
+            <a href="https://www.facebook.com/thiago.alencar.90/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/thiagoalencarjus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.youtube.com/channel/UCA5pzsCgTj23Ro7uD0EAtww" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Navegação</h3>
+          <ul class="footer__nav"><li><a href="../index.html#inicio">Início</a></li><li><a href="../index.html#escritorio">Escritório</a></li><li><a href="../index.html#areas">Áreas de Atuação</a></li><li><a href="../index.html#historia">Sobre Mim</a></li><li><a href="../index.html#depoimentos">Clientes</a></li><li><a href="../index.html#contato">Contato</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Contatos</h3>
+          <ul class="footer__contact-list">
+            <li><svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><a href="#" data-whatsapp-link>(63) 9245-4640</a></li>
+            <li><svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:+556392454640">(63) 9245-4640</a></li>
+            <li><svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:thiagoalencarjus@gmail.com">thiagoalencarjus@gmail.com</a></li>
+            <li><svg class="footer__contact-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>09:00 às 17h30 · Seg a Sex</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Localização</h3>
+          <div class="footer__map"><iframe loading="lazy" src="https://maps.google.com/maps?q=%20Alencar%20Advogados%20R.%20Rui%20Barbosa%2C%20110%20-%20St.%20Central%2C%20Aragua%C3%ADna%20-%20TO%2C%2077805-030&t=m&z=17&output=embed&iwloc=near" title="Alencar Advogados" aria-label="Mapa do escritório" allowfullscreen></iframe></div>
+        </div>
       </div>
-      <p class="footer__text">Alencar Advogados — Soluções jurídicas estratégicas</p>
-      <p class="footer__copy">&copy; 2026 Alencar Advogados. Todos os direitos reservados.</p>
+      <div class="footer__bottom"><p class="footer__copy">&copy; Copyright 2026 Thiago Alencar Advogado — Todos os direitos reservados</p></div>
     </div>
   </footer>
-
+  <a href="#" class="whatsapp-float" data-whatsapp-link aria-label="Fale conosco pelo WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
   <script>
   (function() {
-    var url = 'https://wa.me/556392454640?text=' + encodeURIComponent('Olá! Vim pelo site e gostaria de mais informações.');
-    document.querySelectorAll('[data-whatsapp-link]').forEach(function(el) {
-      el.href = url; el.target = '_blank'; el.rel = 'noopener noreferrer';
-    });
+    var waUrl = 'https://wa.me/556392454640?text=' + encodeURIComponent('Olá! Vim pelo site e gostaria de mais informações.');
+    document.querySelectorAll('[data-whatsapp-link]').forEach(function(el) { el.href = waUrl; el.target = '_blank'; el.rel = 'noopener noreferrer'; });
+    var pageUrl = encodeURIComponent(window.location.href), pageTitle = encodeURIComponent(document.title);
+    var fb = document.getElementById('share-fb'); if(fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
+    var tw = document.getElementById('share-tw'); if(tw) tw.href = 'https://twitter.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle;
+    var wa = document.getElementById('share-wa'); if(wa) wa.href = 'https://wa.me/?text=' + pageTitle + '%20' + pageUrl;
+    var toggle = document.querySelector('.menu-toggle'), nav = document.getElementById('main-nav');
+    if (toggle && nav) { toggle.addEventListener('click', function() { var o = nav.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', o); }); nav.querySelectorAll('.header-nav__link').forEach(function(l) { l.addEventListener('click', function() { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false'); }); }); }
+    var form = document.getElementById('comment-form');
+    if (form) { form.addEventListener('submit', function(e) { e.preventDefault(); var c=form.comentario.value.trim(),n=form.nome.value.trim(),em=form.email.value.trim(),s=form.site.value.trim(); var txt='Comentário no post: '+document.title+'\n\nNome: '+n+'\nE-mail: '+em+(s?'\nSite: '+s:'')+'\n\nComentário:\n'+c; window.open('https://wa.me/556392454640?text='+encodeURIComponent(txt),'_blank'); }); }
   })();
   </script>
 </body>

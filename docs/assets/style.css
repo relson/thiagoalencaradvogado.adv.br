@@ -1155,22 +1155,19 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   :root { --header-height: 70px; }
 
-  /* Header mobile — centralizado */
+  /* Header mobile — logo à esquerda */
   .header-inner {
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
   }
 
   .header-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
   }
 
   .menu-toggle {
     display: block;
-    position: absolute;
-    right: 0;
   }
 
   .header-nav {
